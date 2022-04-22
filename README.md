@@ -1,16 +1,11 @@
-# a99 Final Project
+# a99 Final Project - Taygeta
 
-## UPDATE
-
-You don't need to accept this assignment since you are already assigned to teams. So, there is not assignment invite link for a99.
+Amelia Paulsen, Raven Taylor, Ethan Rayala, Oze Izokun, Pramit Thapa
 
 ## Summary 
 
-COMP426 final project template repository.
-All your code and documentation goes here.
-Change this text to be a brief description of your final project.
-Put the name of your project in the header above.
-You will change everything below to be the main technical documentation, as outlined below.
+This is a mental health resources dashboard to help with the increasing mental health crisis during and after the COVID-19 pandemic. 
+
 
 ## First steps
 
