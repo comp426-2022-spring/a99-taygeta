@@ -107,8 +107,13 @@ color: black;
 
 /* Style the active/current link*/
 .header a.active {
-background-color: dodgerblue;
+background-color: #4783ad;
 color: white;
+}
+
+.header a.active:hover {
+  background-color: #f1f1f1;
+  color: #4783ad
 }
 
 /* Float the link section to the right */
