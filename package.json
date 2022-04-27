@@ -1,0 +1,23 @@
+{
+  "name": "a99-taygeta",
+  "version": "1.0.0",
+  "description": "Our final project!",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comp426-2022-spring/a99-taygeta.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/comp426-2022-spring/a99-taygeta/issues"
+  },
+  "homepage": "https://github.com/comp426-2022-spring/a99-taygeta#readme",
+  "dependencies": {
+    "better-sqlite3": "^7.5.1",
+    "express": "^4.18.0"
+  }
+}
