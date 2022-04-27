@@ -32,13 +32,42 @@ app.get("/app/", (req, res, next) => {
   res.status(200);
 });
 
-/* ACTIONS:
-    update email/password
-    add a new user
-    delete a user
-    track log in 
-    track log out
-    track update
-    check if user/email exists
-    check if username and password are valid
-*/
+//add a new user
+app.post("/app/create/", (req, res, next) => {
+  //perform the necessary code
+});
+
+//delete an existing user
+app.delete("/app/delete/", (req, res, next) => {
+  //perform the necessary code
+});
+
+//update email -- track update
+app.put("/app/update/email", (req, res, next) => {
+  //perform the necessary code
+});
+
+//update password  -- track update
+app.put("/app/update/password/", (req, res, next) => {
+  //perform the necessary code
+});
+
+// track login
+app.post("/app/login/", (req, res, next) => {
+  //perform the necessary code
+});
+
+//track logout
+app.post("/app/logout/", (req, res, next) => {
+  //perform the necessary code
+});
+
+// check if email & password valid
+app.get("/app/exist", (req, res, next) => {
+  //perform the necessary code
+});
+
+//check if email already exists
+app.get("/app/email", (req, res, next) => {
+  //perform the necessary code
+});
