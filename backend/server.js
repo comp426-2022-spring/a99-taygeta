@@ -32,6 +32,7 @@ app.get("/app/", (req, res, next) => {
   res.status(200);
 });
 
+/*
 //add a new user
 app.post("/app/create/", (req, res, next) => {
   //perform the necessary code
@@ -71,3 +72,4 @@ app.get("/app/exist", (req, res, next) => {
 app.get("/app/email", (req, res, next) => {
   //perform the necessary code
 });
+*/
