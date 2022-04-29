@@ -123,6 +123,14 @@ float: right;
 }
 }
 
+.small{
+  color: black;
+}
+
+.login{
+  color: black
+}
+
 * {box-sizing: border-box}
 
 /* Full-width input fields */
