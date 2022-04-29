@@ -1,12 +1,7 @@
 var express = require("express");
 var app = express();
 
-//const bodyParser = require("body-parser");
-
-//commenting out database code for now while I'm getting everything set up.
-//sometimes SQL can be finicky
-
-//const db = require("./database.js");
+const db = require("./database.js");
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
@@ -33,16 +28,12 @@ app.get("/app/", (req, res) => {
   res.status(200);
 });
 
-/*
 app.post("/app/email/", (req, res, next) => {
-  try {
-    const stmt = db.prepare("SELECT COUNT(*) FROM user WHERE email = ?");
-    const info = stmt.run(req.body.email);
-
-    res.status(200).json(info);
-  } catch (e) {
-    res.status(200).json("not found");
-  }
+  const email = req.body.email;
+  const stmt = db
+    .prepare(`SELECT COUNT(*) AS COUNT FROM user WHERE email = '${email}'`)
+    .all();
+  res.status(200).json(stmt[0]["COUNT"]);
 });
 
 app.post("/app/new/user/", (req, res, next) => {
@@ -61,21 +52,25 @@ app.post("/app/new/user/", (req, res, next) => {
 });
 
 app.get("/app/allUsers/", (req, res, next) => {
-  const stmt = db.prepare("SELECT COUNT(*) as COUNT FROM user").all();
-  res.status(200).json(stmt[0]["COUNT"]);
+  const stmt = db.prepare("SELECT * FROM user").all();
+  res.status(200).json(stmt);
 });
 
-app.get("/app/delete/", (req, res, next) => {
+app.post("/app/delete/", (req, res, next) => {
+  const email = req.body.email;
+  console.log(email);
   const stmt = db.prepare("DELETE FROM user WHERE email= ?");
-  const info = stmt.run("raven61@live.unc.edu");
+  const info = stmt.run(email);
   res.status(200).json(info);
 });
-/*
-export async function test() {
-  app.get("/app/", (req, res) => {
-    //const stmt = db.prepare("SELECT * FROM test").all();
-    res.json({ message: "Your API works! (200)" });
-    res.status(200);
-  });
-}
-*/
+
+app.put("/app/update/", (req, res, next) => {
+  const first = req.body.first;
+  const last = req.body.last;
+  const email = req.body.last;
+  const stmt = db.prepare(
+    "UPDATE user SET first = ?, last = ? WHERE email = ?"
+  );
+  const info = stmt.run(first, last, email);
+  res.status(200).json(stmt);
+});

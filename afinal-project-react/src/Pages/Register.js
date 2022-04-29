@@ -6,24 +6,19 @@ import React from "react";
 function Register() {
   const onSubmit = (e) => {
     e.preventDefault();
-    window.location.href = "/dashboard";
-    /*
-    LEAVE THESE FOR NOW!! You should be able to click around.
-    e.preventDefault();
-    console.log("something happened");
     const first1 = e.target.firstname.value;
     const last1 = e.target.lastname.value;
     const email1 = e.target.email.value;
     const psw1 = e.target.psw.value;
     const psw2 = e.target.pswrepeat.value;
-    console.log(first1);
-    //check if email exists
-    if (psw1 == psw2) {
+
+    //check if passwords match
+    if (psw1 === psw2) {
       axios
         .post("http://localhost:5555/app/email/", { email: email1 })
         .then((res) => {
           console.log(res.data);
-          if (res.data == "not found") {
+          if (res.data == "0") {
             axios.post("http://localhost:5555/app/new/user/", {
               first: first1,
               last: last1,
@@ -32,24 +27,13 @@ function Register() {
             });
             window.location.href = "./dashboard";
           } else {
-            console.log("email already exists");
-            alert("email already exists. log in instead.");
+            alert("This email already has an account. Log in instead.");
             window.location.href = "/";
           }
         });
-      //console.log(data);
     } else {
-      console.log("passwords didnt match");
+      alert("Your passwords didn't match. Try again.");
     }
-    /*
-    if ()
-    console.log([first, last, email, psw]);
-    axios.get("http://localhost:5555/app/").then((res) => {
-      console.log(res.data.message);
-
-      //window.location.href = "/dashboard";
-    });
-    */
   };
 
   return (
