@@ -7,7 +7,7 @@ function Profile() {
     console.log(email1);
     axios.post("http://localhost:5555/app/delete/", { email: email1 });
     alert("your account has been deleted");
-    //window.location.href = "/";
+    window.location.href = "/";
   };
   return (
     <form onSubmit={onSubmit}>
