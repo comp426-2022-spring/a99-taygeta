@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# a99 Final Project - Taygeta
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Amelia Paulsen, Raven Taylor, Ethan Rayala, Oze Izokun, Pramit Thapa
 
-## Available Scripts
+## Summary 
 
-In the project directory, you can run:
+This is a mental health resources dashboard to help with the increasing mental health crisis during and after the COVID-19 pandemic. 
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## First steps
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Other steps that you will need to take after your team has accepted the assignment:
 
-### `npm test`
+1. Choose a license and update the LICENSE file accordingly. 
+2. Edit this README.md file and use it as the main location of your technical documentation with links out to information contained under `/docs/`.
+3. Create a `/docs/` directory for more elaborate documentation of your API, planning notes, etc.
+4. Make sure that all of your team members have access to the repository as administrators.
+5. Create a project under the **Projects** tab. Use this to manage your planning. Create a To-do list, etc. Explore the tools available and user them to manage your project.
+7. Assign team roles and include a listing of those roles in this README.md file or in another file under `/docs/`.
+8. Then put your entire development workflow in this repository.
+9. Use **Pull requests** to propose changes and incorporate them into your code from various team members. 
+10. Use **Issues** to identify and track bugs and also to communicate about various aspects of the project.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Team mangement
 
-### `npm run build`
+Plan to meet with your team ASAP.
+Talk through identifying roles within your team.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Try to figure out what each of you are good at/enjoy doing and try to work out roles that incorporate that.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Some basic roles you will want to consider:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. A review manager - someone to review pull requests and merge or reject them and manage the related discussions
+2. A plan manager - someone to keep an eye on the overall plan and keep the project tab/to-do list up to date
+3. A documentation manager - someone to keep the documentation in order and identify what is missing and needs to be documented
+4. A release manager - someone to manage the packaging and release process for your prototype package
+5. A project manager - someone keeping track of all the moving parts and make sure that everything that needs to happen is happening.
+5. Roles for team members to take charge or different parts of the project. Possible roles:
+    1. Front end lead
+    2. Back end lead
+    3. Database lead
+    4. Design lead
+    5. Etc.
 
-### `npm run eject`
+You will notice that there are more roles than people in your group.
+That is because you will all be doing a hybrid job of managing a thing while working on other things.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Check in with instructional staff
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Schedule a few times throughout the rest of the semester for your team to check-in with your assigned instructional staff member during their scheduled office hours. 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Assignment instructions
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+And that is about all you need to get started.
 
-## Learn More
+All the rest of the assignment instructions are available at: https://comp426.johndmart.in/a/99
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Good skill and be creative!
