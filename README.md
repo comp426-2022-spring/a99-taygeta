@@ -1,6 +1,6 @@
 # a99 Final Project - Taygeta
 
-Amelia Paulsen, Raven Taylor, Ethan Rayala, Oze Izokun, Pramit Thapa
+Amelia Paulsen, Raven Taylor, Ethan Rayala, Pramit Thapa
 
 ## Summary 
 
