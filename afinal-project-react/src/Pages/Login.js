@@ -35,11 +35,12 @@ function Login() {
                         </div>
                         <a
                           href="dashboard/"
-                          className="btn btn-primary btn-user btn-block"
+                          className="login"
                         >
                           Login
                         </a>
                       </form>
+                      <br></br>
                       <div className="text-center">
                         <a className="small" href="/register">
                           Create an Account!
