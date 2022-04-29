@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
-import Dashboard from "./Dashboard";
-import Header from "./Header";
-import Login from "./Login";
-import Profile from "./Profile";
-import Register from "./Register";
+import "./css/index.css";
+import Dashboard from "./Pages/Dashboard";
+import Header from "./Pages/Header";
+import Login from "./Pages/Login";
+import Profile from "./Pages/Profile";
+import Register from "./Pages/Register";
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
