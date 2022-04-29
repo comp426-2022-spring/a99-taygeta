@@ -1,4 +1,4 @@
-import "./Profile.css";
+import "../css/Profile.css";
 function Profile() {
   return (
     <div className="container rounded bg-white mt-5 mb-5">
