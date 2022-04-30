@@ -4,7 +4,7 @@ Amelia Paulsen, Raven Taylor, Ethan Rayala, Pramit Thapa
 
 ## Summary 
 
-This is a mental health resources dashboard to help with the increasing mental health crisis during and after the COVID-19 pandemic. It is implement using react framework. 
+This is a mental health resources dashboard to help with the increasing mental health crisis during and after the COVID-19 pandemic. It is implemented using the react framework. 
 
 
 ## Steps on how to use this app
