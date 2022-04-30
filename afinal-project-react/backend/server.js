@@ -30,10 +30,24 @@ app.get("/app/", (req, res) => {
 
 app.post("/app/email/", (req, res, next) => {
   const email = req.body.email;
-  const stmt = db
+  const psw = req.body.psw;
+  let stmt = db
     .prepare(`SELECT COUNT(*) AS COUNT FROM user WHERE email = '${email}'`)
     .all();
-  res.status(200).json(stmt[0]["COUNT"]);
+  if (stmt[0]["COUNT"] == 0) {
+    res.status(200).json("email doesn't exist");
+  } else {
+    let stmt = db
+      .prepare(
+        `SELECT COUNT(*) AS COUNT FROM user WHERE email = '${email}' AND password='${psw}'`
+      )
+      .all();
+    if (stmt[0]["COUNT"] == 0) {
+      res.status(200).json("password doesn't match");
+    } else {
+      res.status(200).json("email and password found");
+    }
+  }
 });
 
 app.post("/app/new/user/", (req, res, next) => {
