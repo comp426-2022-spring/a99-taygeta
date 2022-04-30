@@ -28,7 +28,7 @@ function Login() {
     <form onSubmit={onSubmit}>
       <div className="container">
         <label htmlFor="uname">
-          <b>Username</b>
+          <b>Email</b>
         </label>
         <input
           type="text"
