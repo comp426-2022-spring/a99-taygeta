@@ -17,8 +17,7 @@ function Register() {
       axios
         .post("http://localhost:5555/app/email/", { email: email1 })
         .then((res) => {
-          console.log(res.data);
-          if (res.data == "0") {
+          if (res.data == "email doesn't exist") {
             axios.post("http://localhost:5555/app/new/user/", {
               first: first1,
               last: last1,

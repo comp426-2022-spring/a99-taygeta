@@ -5,18 +5,22 @@ function Login() {
   const onSubmit = (e) => {
     e.preventDefault();
     const email1 = e.target.email.value;
+    const psw1 = e.target.psw.value;
     axios
-      .post("http://localhost:5555/app/email/", { email: email1 })
+      .post("http://localhost:5555/app/email/", { email: email1, psw: psw1 })
       .then((res) => {
-        console.log(res.data);
-        if (res.data == "0") {
+        if (res.data == "email doesn't exist") {
           alert(
             "There's no record of this email. Create a new account instead."
           );
           window.location.href = "/register";
         } else {
-          alert("We found your email! Let's take you to the dashboard.");
-          window.location.href = "/dashboard";
+          if (res.data == "password doesn't match") {
+            alert("We found your email but your password is invalid.");
+          } else {
+            alert("We found your email! Let's take you to the dashboard.");
+            window.location.href = "/dashboard";
+          }
         }
       });
   };
