@@ -18,6 +18,6 @@ This is a mental health resources dashboard to help with the increasing mental h
 8. Log back in with your email and password 
 
 
-Here are the [roles](afinal-project-react\doc\roles) for the project.
+Here are the [roles](https://github.com/comp426-2022-spring/a99-taygeta/tree/main/afinal-project-react/doc/roles.md) for the project.
 
-Here are the [resources](afinal-project-react\doc\resources) we used for our app. 
+Here are the [resources](https://github.com/comp426-2022-spring/a99-taygeta/tree/main/afinal-project-react/doc/resources.md) we used for our app. 
