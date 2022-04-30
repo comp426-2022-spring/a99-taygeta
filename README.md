@@ -21,3 +21,5 @@ This is a mental health resources dashboard to help with the increasing mental h
 Here are the [roles](https://github.com/comp426-2022-spring/a99-taygeta/tree/main/afinal-project-react/doc/roles.md) for the project.
 
 Here are the [resources](https://github.com/comp426-2022-spring/a99-taygeta/tree/main/afinal-project-react/doc/resources.md) we used for our app. 
+
+Here is a link to our [project](https://github.com/comp426-2022-spring/a99-taygeta/projects/1) board. 
