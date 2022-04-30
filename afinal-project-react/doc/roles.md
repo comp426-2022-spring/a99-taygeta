@@ -1,14 +1,14 @@
-## Roles and descriptions:
+# Roles and descriptions:
 
-Amelia Paulsen
+### Amelia Paulsen
 -Front-end 
 
-Ethan Rayala
+### Ethan Rayala
 -Front-end
 
-Pramit Thapa
+### Pramit Thapa
 -Front-end
 -Pull-request manager
 
-Raven Taylor 
+### Raven Taylor 
 -Back-end

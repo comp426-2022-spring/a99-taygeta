@@ -16,3 +16,8 @@ This is a mental health resources dashboard to help with the increasing mental h
 6. Click on "Profile" in the dashboard to view your profile
 7. Use the LogOut button to log out
 8. Log back in with your email and password 
+
+
+Here are the [roles](afinal-project-react\doc\roles) for the project.
+
+Here are the [resources](afinal-project-react\doc\resources) we used for our app. 
