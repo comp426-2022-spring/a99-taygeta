@@ -6,6 +6,7 @@ function Profile() {
     const email1 = e.target.email.value;
     console.log(email1);
     axios.post("http://localhost:5555/app/delete/", { email: email1 });
+    axios.post("http://localhost:5555/app/log/delete", { email: email1 });
     alert("your account has been deleted");
     window.location.href = "/";
   };

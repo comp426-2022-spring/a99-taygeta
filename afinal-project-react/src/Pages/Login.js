@@ -19,6 +19,9 @@ function Login() {
             alert("We found your email but your password is invalid.");
           } else {
             alert("We found your email! Let's take you to the dashboard.");
+            axios.post("http://localhost:5555/app/log/login", {
+              email: email1,
+            });
             window.location.href = "/dashboard";
           }
         }

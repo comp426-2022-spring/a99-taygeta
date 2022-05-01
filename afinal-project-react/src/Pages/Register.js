@@ -24,6 +24,9 @@ function Register() {
               email: email1,
               psw: psw1,
             });
+            axios.post("http://localhost:5555/app/log/register", {
+              email: email1,
+            });
             window.location.href = "./dashboard";
           } else {
             alert("This email already has an account. Log in instead.");

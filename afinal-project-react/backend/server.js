@@ -2,6 +2,7 @@ var express = require("express");
 var app = express();
 
 const db = require("./database.js");
+const l_db = require("./log_database.js");
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
@@ -23,6 +24,7 @@ const server = app.listen(HTTP_PORT, () => {
 });
 
 //root endpoint
+
 app.get("/app/", (req, res) => {
   res.json({ message: "Our API works! (200)" });
   res.status(200);
@@ -86,5 +88,34 @@ app.put("/app/update/", (req, res, next) => {
     "UPDATE user SET first = ?, last = ? WHERE email = ?"
   );
   const info = stmt.run(first, last, email);
+  res.status(200).json(stmt);
+});
+
+app.post("/app/log/login", (req, res, next) => {
+  const stmt = l_db.prepare(
+    "INSERT INTO log (email, action, time) VALUES (?, ?, ?)"
+  );
+  const info = stmt.run(req.body.email, "login", Date.now());
+  res.status(200).json(info);
+});
+
+app.post("/app/log/delete", (req, res, next) => {
+  const stmt = l_db.prepare(
+    "INSERT INTO log (email, action, time) VALUES (?, ?, ?)"
+  );
+  const info = stmt.run(req.body.email, "delete", Date.now());
+  res.status(200).json(info);
+});
+
+app.post("/app/log/register", (req, res, next) => {
+  const stmt = l_db.prepare(
+    "INSERT INTO log (email, action, time) VALUES (?, ?, ?)"
+  );
+  const info = stmt.run(req.body.email, "register", Date.now());
+  res.status(200).json(info);
+});
+
+app.get("/app/allLogs", (req, res, next) => {
+  const stmt = l_db.prepare("SELECT * FROM log").all();
   res.status(200).json(stmt);
 });
