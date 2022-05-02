@@ -112,7 +112,7 @@ color: white;
 }
 
 .header a.active:hover {
-  background-color: #f1f1f1;
+  background-color: #ddd;
   color: #4783ad
 }
 
